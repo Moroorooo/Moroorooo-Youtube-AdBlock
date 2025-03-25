@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YoutubeADSmoroorooo",
+  "version": "1.0",
+  "description": "Chặn quảng cáo YouTube một cách tinh tế",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
